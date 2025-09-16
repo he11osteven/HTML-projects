@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jojo</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    
+    <style>
+         #jojo{
+            size-adjust: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 400px;
+            height: auto;
+            padding-top: 70px;
+            animation: breath 5s infinite ease-in-out;
+            transition: transform 2s ease-in-out;
+         }
+         a{
+            display: block;
+            width: fit-content;
+            margin: 0 auto;
+         }
+
+         #jojo:hover{
+            transform: scale(130%);
+
+         }
+        .title{
+            display: block;
+            text-align: center;
+            font-size: 100;
+            font-family: fantasy;
+            font-size: 100px;
+            border: 5px rgb(0, 0, 0);
+            border-style: dotted;
+            border-radius: 100px;
+            padding: 1px 1px;
+        }
+        *:not(#jojo){
+            background-color: blueviolet;
+            animation: pulse 5s infinite ease-in-out;
+        }
+
+         @keyframes breath{
+            0%{
+                padding-top: 70px; 
+            }
+            50%{
+                padding-top: 10px;
+            }
+
+            100%{
+                padding-top: 70px;
+            }
+         }
+
+         @keyframes pulse {
+      0% {
+        background-color: #836980;
+      }
+      50% {
+        background-color: #664d48; 
+      }
+      100% {
+        background-color: #836980; 
+      }
+    }
+    </style>
+  </head>
+<body>
+    <div class="title">Welcome to my awesome website!!!</div>
+    <a href= fun.html>
+        <img id='jojo' src="https://m.media-amazon.com/images/M/MV5BMzIyNzY4NTMtNmVhYS00OWFhLTkwMWMtOGFkNTdmNWU2ZDdiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"></img>
+    </a>
+        
+</body>
+  </html>
